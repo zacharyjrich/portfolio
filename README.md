@@ -1,7 +1,5 @@
 # My Portfolio
 
-#### Portfolio
-
 #### By Zachary Richards
 
 ## Description

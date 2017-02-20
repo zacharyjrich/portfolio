@@ -1,7 +1,7 @@
 .portfolio {
     .header {
-        background-color: #1E2D36;
-        background: linear-gradient(to right, #1E2D36, rgba(0, 0, 0, 0));
+        background-color: $primary-blue;
+        background: linear-gradient(to right, $primary-blue, rgba(0, 0, 0, 0));
         height: 8rem;
         position: relative;
         transform-style: preserve-3d;
@@ -19,6 +19,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 2;
         }
     }
 
@@ -29,11 +30,16 @@
     }
 
     .projects {
-        background-color: #1E2D36;
-        padding: 2rem;
+        background-color: $primary-blue;
+        padding: 0 2rem 4rem;
+
+        .title {
+            margin: 4rem 0 3rem;
+        }
 
         .panel {
-            background-color: rgba(#ACD9E4, .7);
+            background-color: $secondary-blue;
+            border-radius: 5px;
             height: 15rem;
             margin: 1rem;
         }
