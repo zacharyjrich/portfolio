@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Portfolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-689.000000, -80.000000)" fill="#334D53">
+            <g id="Nav-Area">
+                <g id="Logo2" transform="translate(689.000000, 80.000000)">
+                    <g>
+                        <path d="M61.8974388,30.9671018 L61.8974388,61.9251561 L30.9251561,61.9251561 L30.9251166,61.9251166 C30.9417724,61.9251429 30.9584313,61.9251561 30.9750933,61.9251561 C48.0530332,61.9251561 61.8974388,48.0695977 61.8974388,30.9779002 C61.8974388,30.9742997 61.8974382,30.9706993 61.897437,30.9670991 L61.8974388,30.9671018 Z M30.9609814,0.0306442976 L30.9609845,0.0306474204 C13.8895291,0.0382760312 0.0527477625,13.8909097 0.0527477625,30.9779002 C0.0527477625,31.0028859 0.0527773485,31.0278647 0.0528364874,31.0528365 L0.0527477625,31.0527478 L0.0527477625,0.0306442976 L30.9609814,0.0306442976 Z" id="Combined-Shape" filter="url(#filter-1)"></path>
+                        <path d="M37.2797997,0.860811259 C37.5669313,0.390515996 38.2377855,0.00909257657 38.8027632,0.00886846122 L60.853497,0.000121376793 C61.4074749,-9.83751302e-05 61.6233124,0.37898992 61.3328585,0.851269892 L24.3086247,61.052913 C24.0193909,61.5232091 23.3311147,61.9046394 22.7933923,61.9048527 L0.996289768,61.9134992 C0.448683849,61.9137164 0.236316536,61.5346267 0.52465944,61.0623476 L37.2797997,0.860811259 Z" id="Rectangle-4" filter="url(#filter-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,10 +1,8 @@
 .portfolio {
-    background: url('../../img/background.png') no-repeat center / cover;
-    height: 100vh;
-
     .header {
         background-color: #1E2D36;
-        height: 10rem;
+        background: linear-gradient(to right, #1E2D36, rgba(0, 0, 0, 0));
+        height: 8rem;
         position: relative;
         transform-style: preserve-3d;
 
@@ -15,7 +13,6 @@
         }
 
         .title {
-            font-family: Courier New;
             font-size: 1.5rem;
             margin: 0;
             position: absolute;
@@ -25,11 +22,18 @@
         }
     }
 
+    .hero-area {
+        background: url('../../img/background.png') no-repeat top / cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+
     .projects {
-        margin-top: 6rem;
+        background-color: #1E2D36;
+        padding: 2rem;
 
         .panel {
-            background-color: rgba(#1E2D36, .7);
+            background-color: rgba(#ACD9E4, .7);
             height: 15rem;
             margin: 1rem;
         }
