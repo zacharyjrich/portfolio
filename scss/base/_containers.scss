@@ -4,7 +4,7 @@
         background: linear-gradient(to right, $primary-blue, rgba(0, 0, 0, 0));
         height: 8rem;
         position: relative;
-        transform-style: preserve-3d;
+        // transform-style: preserve-3d;
 
         .logo {
             position: absolute;
@@ -40,8 +40,36 @@
         .panel {
             background-color: $secondary-blue;
             border-radius: 5px;
+            display: block;
             height: 15rem;
             margin: 1rem;
+            transition: all 1500ms ease;
+        }
+
+        .overlay {
+            height: 100%;
+            transition: all 1500ms ease;
+            width: 100%;
+            // background-color: rgba( $black, .5);
+            &:hover {
+                background-color: rgba( $overlay, .6);
+            }
+        }
+
+        .panel.first {
+            background: url('../../img/background.png') no-repeat top / cover;
+        }
+
+        .panel.second {
+            background: url('../../img/background.png') no-repeat top / cover;
+        }
+
+        .panel.third {
+            background: url('../../img/background.png') no-repeat top / cover;
+        }
+
+        .panel.fourth {
+            background: url('../../img/background.png') no-repeat top / cover;
         }
     }
 }
