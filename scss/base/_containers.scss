@@ -1,5 +1,5 @@
 .portfolio {
-    .header {
+    .header-bar {
         background-color: $primary-blue;
         background: linear-gradient(to right, $primary-blue, rgba(0, 0, 0, 0));
         height: 8rem;
@@ -26,33 +26,66 @@
     .hero-area {
         background: url('../../img/background.png') no-repeat top / cover;
         background-attachment: fixed;
-        height: 100vh;
+        height: 50rem;
+
+        .hero-body {
+            margin-top: 8rem;
+
+            .title .under {
+                width: 50%;
+            }
+
+            .nav-link {
+                &:hover {
+                    cursor: pointer;
+
+                    .under {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .under {
+                border: 1px solid $white;
+                transition: all 1s ease;
+                width: 20%;
+            }
+        }
     }
 
     .projects {
-        background-color: $primary-blue;
-        padding: 0 2rem 4rem;
+        background-color: $secondary-blue;
+        // padding: 0 0 4rem;
 
-        .title {
-            margin: 4rem 0 3rem;
+        .header {
+            margin: 3rem 0;
         }
 
         .panel {
             background-color: $secondary-blue;
-            border-radius: 5px;
             display: block;
-            height: 15rem;
-            margin: 1rem;
-            transition: all 1500ms ease;
-        }
+            height: 25rem;
+            // margin: rem-calc(10) 0;
+            transition: all 1000ms ease;
 
-        .overlay {
-            height: 100%;
-            transition: all 1500ms ease;
-            width: 100%;
-            // background-color: rgba( $black, .5);
-            &:hover {
-                background-color: rgba( $overlay, .6);
+            &:hover .overlay {
+                background-color: rgba( $overlay, .7);
+            }
+
+            .overlay {
+                height: 100%;
+                transition: all 1000ms ease;
+                width: 100%;
+            }
+
+            .title {
+                color: $white;
+                top: 15%;
+                left: 50%;
+                position: absolute;
+                text-align: center;
+                transform: translateX(-50%);
+                width: 80%;
             }
         }
 
