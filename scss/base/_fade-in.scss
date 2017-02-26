@@ -7,16 +7,16 @@
     .fade-in:not(.no-fade) {
         opacity: 0;
         transform: translate3d(0, 20px, 0);
-        animation-name: fadeContent;
-        animation-timing-function: ease;
-        animation-fill-mode: forwards;
-        animation-duration: 1.25s;
+        animation: fadeContent 1.25s ease forwards;
+        // animation-timing-function: ease;
+        // animation-fill-mode: forwards;
+        // animation-duration: 1.25s;
         animation-delay: .25s;
-        //
-        // &:nth-child(odd) {
-        //     animation-duration: 1s;
-        //     /* So they look staggered */
-        // }
+
+        &:nth-child(odd) {
+            animation-duration: 1s;
+            /* So they look staggered */
+        }
     }
     @keyframes fadeContent {
         from {

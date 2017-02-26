@@ -11,7 +11,7 @@
             <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
         </filter>
     </defs>
-    <g id="Portfolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
+    <g id="Portfolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.25">
         <g id="Desktop-HD" transform="translate(-689.000000, -80.000000)" fill="#FFFFFF">
             <g id="Nav-Area">
                 <g id="Logo2" transform="translate(689.000000, 80.000000)">

@@ -26,21 +26,18 @@
     .hero-area {
         background: url('../../img/background.png') no-repeat top / cover;
         background-attachment: fixed;
-        height: 50rem;
+        height: 110vh;
 
         .hero-body {
-            margin-top: 8rem;
-
-            .title .under {
-                width: 50%;
-            }
+            color: $white;
+            margin-top: 10rem;
 
             .nav-link {
                 &:hover {
                     cursor: pointer;
 
                     .under {
-                        width: 50%;
+                        width: 60%;
                     }
                 }
             }
@@ -48,61 +45,72 @@
             .under {
                 border: 1px solid $white;
                 transition: all 1s ease;
-                width: 20%;
+                width: 30%;
             }
         }
     }
 
     .projects {
-        background-color: $secondary-blue;
-        // padding: 0 0 4rem;
-
-        .header {
-            margin: 3rem 0;
-        }
+        background-color: $secondary-gray;
 
         .panel {
-            background-color: $secondary-blue;
-            display: block;
+            align-items: center;
+            display: flex;
             height: 25rem;
+            justify-content: center;
             // margin: rem-calc(10) 0;
+            padding: 5rem;
+            position: relative;
             transition: all 1000ms ease;
-
-            &:hover .overlay {
-                background-color: rgba( $overlay, .7);
-            }
+            z-index: 0;
 
             .overlay {
+                background-color: rgba($primary-gray, .5);
                 height: 100%;
+                position: absolute;
                 transition: all 1000ms ease;
                 width: 100%;
+                z-index: -1;
             }
 
             .title {
                 color: $white;
-                top: 15%;
-                left: 50%;
-                position: absolute;
+                margin: 0;
                 text-align: center;
-                transform: translateX(-50%);
-                width: 80%;
+                z-index: 2;
             }
         }
 
         .panel.first {
             background: url('../../img/background.png') no-repeat top / cover;
+
+            &:hover .overlay {
+                background-color: rgba($primary-red, .5);
+            }
         }
 
         .panel.second {
             background: url('../../img/background.png') no-repeat top / cover;
+
+            &:hover .overlay {
+                background-color: rgba($primary-orange, .5);
+            }
         }
 
         .panel.third {
             background: url('../../img/background.png') no-repeat top / cover;
+
+            &:hover .overlay {
+                background-color: rgba($secondary-blue, .5);
+            }
         }
 
         .panel.fourth {
             background: url('../../img/background.png') no-repeat top / cover;
+
+            &:hover .overlay {
+                background-color: rgba($primary-red, .5);
+            }
         }
     }
 }

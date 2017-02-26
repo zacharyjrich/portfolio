@@ -8,13 +8,14 @@ $(document).foundation();
         viewTop       = $w.scrollTop(),
         viewBottom    = viewTop + $w.height(),
         _top          = $t.offset().top;
+
     return (viewBottom >= _top);
   };
 })($);
 
 var $primeItems = [
-  '.projects h1',
-  '.projects .panel',
+  '.hero-body .nav-link',
+  '.projects .title',
 ];
 
 for (var i = 0, l = $primeItems.length; i < l; i++) {
