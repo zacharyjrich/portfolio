@@ -1,15 +1,16 @@
 .portfolio {
     .header-bar {
-        background-color: $primary-blue;
-        background: linear-gradient(to right, $primary-blue, rgba(0, 0, 0, 0));
-        height: 8rem;
+        background-color: $black;
+        // background: linear-gradient(150deg, $black, transparent);
+        background: linear-gradient(-10deg, transparent -4%, $black 100%, transparent);
+        height: 6rem;
         position: relative;
-        // transform-style: preserve-3d;
+        transform-style: preserve-3d;
 
         .logo {
             position: absolute;
             top: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate3d(-50%, -50%, 0);
         }
 
         .title {
@@ -18,34 +19,35 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate3d(-50%, -50%, 0);
             z-index: 2;
         }
     }
 
     .hero-area {
-        background: url('../../img/background.png') no-repeat top / cover;
-        background-attachment: fixed;
-        height: 110vh;
+        background: url('../../img/background.jpg') no-repeat top / cover;
+        background-attachment: scroll;
+        // height: 110vh;
+        height: 45rem;
 
         .hero-body {
             color: $white;
-            margin-top: 10rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: 12rem;
 
             .nav-link {
+                background: rgba($primary-orange, .5);
+                border-radius: 3px;
+                margin-bottom: 2rem;
+                padding: .25rem;
+                transition: all 500ms ease;
+
                 &:hover {
+                    background: rgba($primary-orange, .9);
                     cursor: pointer;
-
-                    .under {
-                        width: 60%;
-                    }
+                    transform: scale(1.1);
                 }
-            }
-
-            .under {
-                border: 1px solid $white;
-                transition: all 1s ease;
-                width: 30%;
             }
         }
     }
@@ -64,8 +66,14 @@
             transition: all 1000ms ease;
             z-index: 0;
 
+            &:hover {
+                .under {
+                    width: 80%;
+                }
+            }
+
             .overlay {
-                background-color: rgba($primary-gray, .5);
+                background-color: rgba($black, .5);
                 height: 100%;
                 position: absolute;
                 transition: all 1000ms ease;
@@ -78,6 +86,12 @@
                 margin: 0;
                 text-align: center;
                 z-index: 2;
+            }
+
+            .under {
+                border: 1px solid $white;
+                transition: all 1000ms ease;
+                width: 20%;
             }
         }
 
@@ -93,7 +107,7 @@
             background: url('../../img/background.png') no-repeat top / cover;
 
             &:hover .overlay {
-                background-color: rgba($primary-orange, .5);
+                background-color: rgba($primary-blue, .5);
             }
         }
 
@@ -101,7 +115,7 @@
             background: url('../../img/background.png') no-repeat top / cover;
 
             &:hover .overlay {
-                background-color: rgba($secondary-blue, .5);
+                background-color: rgba($primary-orange, .5);
             }
         }
 
@@ -109,7 +123,7 @@
             background: url('../../img/background.png') no-repeat top / cover;
 
             &:hover .overlay {
-                background-color: rgba($primary-red, .5);
+                background-color: rgba($secondary-blue, .5);
             }
         }
     }
