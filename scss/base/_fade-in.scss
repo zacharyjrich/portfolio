@@ -15,7 +15,6 @@
 
         &:nth-child(odd) {
             animation-duration: 1s;
-            /* So they look staggered */
         }
     }
     @keyframes fadeContent {

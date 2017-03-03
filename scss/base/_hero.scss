@@ -1,0 +1,127 @@
+////
+/// ----------------------------------------------------------------------------------------
+/// A SCSS Template with foundation's media queries
+/// ----------------------------------------------------------------------------------------
+/// Hero Area
+/// @author - Zachary Richards
+/// @description - This will style the new static header for Cross River Bank.
+////
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - All viewport widths from mobile up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(small) {
+    .portfolio {
+        .hero-area {
+            background: url('../../img/background2.jpg') no-repeat bottom fixed / cover;
+
+            // &:before {
+            //     content: "";
+            //     // background-attachment: scroll;
+            //     background: url('../../img/background2.jpg') no-repeat bottom / cover;
+            //     position: absolute;
+            //     filter: blur(2px);
+            //     bottom: 0;
+            //     height: 100%;
+            //     width: 100%;
+            // }
+
+            .header-bar {
+                // background-color: rgba($black, .7);
+                background: linear-gradient(to bottom right, $black, transparent 100%);
+                height: 6rem;
+                position: relative;
+                transform-style: preserve-3d;
+
+                .logo {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate3d(-50%, -50%, 0);
+                }
+
+                .title {
+                    font-size: 1.25rem;
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate3d(-50%, -50%, 0);
+                    z-index: 2;
+                }
+            }
+
+            .hero-body {
+                color: $white;
+                display: flex;
+                // height: 50rem;
+                height: 105vh;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .header {
+                    margin-bottom: 5rem;
+                }
+
+                .nav-link {
+                    background: rgba($primary-blue, .7);
+                    // border: 3px solid $white;
+                    border-radius: rem-calc(45);
+                    margin-bottom: 1rem;
+                    padding: rem-calc(8);
+                    transition: all 500ms ease;
+
+                    &:hover {
+                        background: $white;
+                        // background: rgba($secondary-blue, .8);
+                        color: $primary-blue;
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+/// End of Small Up
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - Tablet display (641px) viewport widths up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(medium) {
+    .portfolio {}
+}
+/// End of Medium Up
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - Large display (1025px) viewport widths up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(large) {
+    .portfolio {
+        .hero-area {
+            .hero-body {
+                .links {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                .nav-link {
+                    font-size: 1.5rem;
+                    padding: .8rem 2.5rem;
+                }
+
+                .nav-link.first {
+                    padding: .8rem 3rem;
+                }
+            }
+        }
+    }
+}
+/// End of Large Up

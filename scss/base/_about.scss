@@ -1,0 +1,39 @@
+////
+/// ----------------------------------------------------------------------------------------
+/// A SCSS Template with foundation's media queries
+/// ----------------------------------------------------------------------------------------
+/// About Area
+/// @author - Zachary Richards
+/// @description - This will style the new static header for Cross River Bank.
+////
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - All viewport widths from mobile up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(small) {
+    .portfolio {
+        .about {
+            background: $white;
+            height: 50rem;
+        }
+    }
+}
+/// End of Small Up
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - Tablet display (641px) viewport widths up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(medium) {}
+/// End of Medium Up
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - Large display (1025px) viewport widths up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(large) {}
+/// End of Large Up

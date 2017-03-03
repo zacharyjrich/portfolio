@@ -1,0 +1,113 @@
+////
+/// ----------------------------------------------------------------------------------------
+/// A SCSS Template with foundation's media queries
+/// ----------------------------------------------------------------------------------------
+/// Projects Area
+/// @author - Zachary Richards
+/// @description - This will style the new static header for Cross River Bank.
+////
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - All viewport widths from mobile up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(small) {
+    .portfolio {
+        .projects {
+            // background-color: $secondary-gray;
+
+            .panel {
+                align-items: center;
+                display: flex;
+                flex-flow: column;
+                height: 25rem;
+                justify-content: center;
+                padding: 5rem;
+                position: relative;
+                transition: all 1000ms ease;
+                z-index: 0;
+
+                &:hover {
+                    .under {
+                        width: 80%;
+                    }
+                }
+
+                .overlay {
+                    background-color: rgba($black, .5);
+                    height: 100%;
+                    position: absolute;
+                    transition: all 1000ms ease;
+                    width: 100%;
+                    z-index: -1;
+                }
+
+                .title {
+                    color: $white;
+                    margin: 0;
+                    z-index: 2;
+                }
+
+                .under {
+                    border: 1px solid $white;
+                    transition: all 1000ms ease;
+                    width: 20%;
+                }
+
+                .description {
+                    margin: 0;
+                }
+            }
+
+            .panel.first {
+                background: url('../../img/background3.jpg') no-repeat top / cover;
+
+                &:hover .overlay {
+                    background-color: rgba($primary-red, .6);
+                }
+            }
+
+            .panel.second {
+                background: url('../../img/background.png') no-repeat top / cover;
+
+                &:hover .overlay {
+                    background-color: rgba($primary-blue, .6);
+                }
+            }
+
+            .panel.third {
+                background: url('../../img/background.png') no-repeat top / cover;
+
+                &:hover .overlay {
+                    background-color: rgba($primary-orange, .6);
+                }
+            }
+
+            .panel.fourth {
+                background: url('../../img/background3.jpg') no-repeat top / cover;
+
+                &:hover .overlay {
+                    background-color: rgba($secondary-blue, .6);
+                }
+            }
+        }
+    }
+}
+/// End of Small Up
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - Tablet display (641px) viewport widths up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(medium) {}
+/// End of Medium Up
+
+/////
+/// ----------------------------------------------------------------------------------------
+/// @description - Large display (1025px) viewport widths up to infinity
+/// ----------------------------------------------------------------------------------------
+////
+@include breakpoint(large) {}
+/// End of Large Up

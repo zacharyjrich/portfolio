@@ -1,0 +1,19 @@
+////
+/// ----------------------------------------------------------------------------------------
+/// Web font declaration and references
+/// ----------------------------------------------------------------------------------------
+/// @author - Zachary Richards
+/// @description - /assets/fonts are declared here and the files must live here ./assets//assets/fonts
+////
+@font-face {
+    font-family: "montserrat_medium";
+    src: url("../fonts/Montserrat-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: "montserrat_light";
+    src: url("../fonts/Montserrat-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: "montserrat_extralight";
+    src: url("../fonts/Montserrat-ExtraLight.ttf") format('truetype');
+}

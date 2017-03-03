@@ -1,8 +1,12 @@
 @charset 'utf-8';
 @import 'base/variable';
 @import 'base/settings';
+@import 'base/fonts';
 @import 'base/fade-in';
-@import 'base/containers';
+@import 'base/base';
+@import 'base/hero';
+@import 'base/about';
+@import 'base/projects';
 @import 'foundation';
 @import 'motion-ui';
 @include foundation-everything;
