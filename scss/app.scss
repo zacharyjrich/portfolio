@@ -1,12 +1,29 @@
+////
+/// ----------------------------------------------------------------------------------------
+/// Main scss
+/// ----------------------------------------------------------------------------------------
+/// @description - this file is where all custom or project specific styling will live.
+////
+
+////
+/// ----------------------------------------------------------------------------------------
+/// Base styling
+/// ----------------------------------------------------------------------------------------
+////
 @charset 'utf-8';
 @import 'base/variable';
 @import 'base/settings';
 @import 'base/fonts';
 @import 'base/fade-in';
 @import 'base/base';
-@import 'base/hero';
-@import 'base/about';
-@import 'base/projects';
 @import 'foundation';
 @import 'motion-ui';
 @include foundation-everything;
+////
+/// ----------------------------------------------------------------------------------------
+/// Layout styling
+/// ----------------------------------------------------------------------------------------
+////
+@import 'containers/hero';
+@import 'containers/about';
+@import 'containers/projects';

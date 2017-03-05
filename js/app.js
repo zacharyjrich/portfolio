@@ -34,7 +34,7 @@ $(document).ready(function() {
 var $primeItems = [
     '.header-bar',
     '.hero-body',
-    '.projects .title',
+    '.projects .title', '.projects .description',
 ];
 
 for (var i = 0, l = $primeItems.length; i < l; i++) {
