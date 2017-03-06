@@ -32,7 +32,7 @@ $(document).ready(function() {
 })($);
 
 var $primeItems = [
-    '.header-bar',
+    '.logo-bar',
     '.hero-body',
     '.projects .title', '.projects .description',
 ];

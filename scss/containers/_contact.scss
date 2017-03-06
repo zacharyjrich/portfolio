@@ -2,9 +2,9 @@
 /// ----------------------------------------------------------------------------------------
 /// A SCSS Template with foundation's media queries
 /// ----------------------------------------------------------------------------------------
-/// About Area
+/// Contact Area
 /// @author - Zachary Richards
-/// @description - This will style the About Area
+/// @description - This will style the Contact Area
 ////
 
 /////
@@ -14,12 +14,11 @@
 ////
 @include breakpoint(small) {
     .portfolio {
-        .about {
-            background-color: lighten($primary-orange, 20%);
-            // height: 50rem;
+        .contact {
+            background-color: $secondary-blue;
             padding: 3rem 0;
 
-            .about-title {
+            .contact-title {
                 font-family: "montserrat_bold";
 
                 .under {
